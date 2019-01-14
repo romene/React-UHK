@@ -53,8 +53,6 @@ class Main extends Component {
       );
     };
 
-    
-
     return (
       <div>
         <Header />
@@ -71,7 +69,8 @@ class Main extends Component {
         <Footer />
       </div>
     );
-}}
+  }
+}
 
 export default withRouter(connect(mapStateToProps)(Main));
 //Incase you're using Router WithRouter  connect(mapStateToProps)(Component)

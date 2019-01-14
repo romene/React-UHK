@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Button, Form, FormGroup, Label, Col, Input, FormFeedback, Row} from "reactstrap";
+import { Button,  Label, Col, Row} from "reactstrap";
 import { Control, LocalForm, Errors } from "react-redux-form";
 
 const required = (val) => val && val.length
@@ -38,7 +38,7 @@ class Contact extends Component {
                                     <Control.text model=".firstname" id="firstname" name="firstname"
                                         placeholder="First Name"
                                         className="form-control"
-                                        validators={{required, minLength:maxLength(3), maxLength:maxLength(15)}}
+                                        validators={{required, minLength:minLength(3), maxLength:maxLength(15)}}
                                     /> {/* Spicify what to must be validate on this field */}
                                     
                                     <Errors 
@@ -59,7 +59,7 @@ class Contact extends Component {
                                         placeholder="Last Name"
                                         className="form-control"
                                         validators={{ required,
-                                                        minLength: maxLength(3),
+                                                        minLength: minLength(3),
                                                         maxLength: maxLength(15) 
                                                     }}
                                     />{/* Spicify what to must be validate on this field */}
