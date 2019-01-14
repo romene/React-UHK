@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Button, Form, FormGroup, Label, Col, Input, FormFeedback} from "reactstrap";
-import { Link } from "react-router-dom";
 
 class Contact extends Component {
     constructor(props) {
