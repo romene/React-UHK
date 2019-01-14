@@ -27,6 +27,7 @@
     justify-content: center;
     box-shadow:5px 10px 10px #e8e8e8;
     transition: transform .2s;
+    overflow: hidden;
 }
 
 #about-img:hover {
